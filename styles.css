@@ -1,0 +1,31 @@
+body{
+    margin: 1em;
+}
+
+nav{
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.navItems{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pinLogOpt{
+    width: 24px;
+    height: 24px;
+}
+
+img{
+    max-width: 100%;
+    margin-bottom: 0.5em;
+    display: block;
+    border-radius: 40px;
+}
+
+.gallery{
+    columns: 5 320px;
+    column-gap: 0.5em;
+}
