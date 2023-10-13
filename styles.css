@@ -6,10 +6,17 @@ nav{
     position: fixed;
     box-sizing: border-box;
     align-items: center;
-    background-color: white;
+    height: 80px;
+    width: 100%;
 }
 
 .navItems{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#leftItems{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -25,6 +32,12 @@ img{
     margin-bottom: 0.5em;
     display: block;
     border-radius: 40px;
+}
+
+main{
+    display: block;
+    box-sizing: border-box;
+    padding-top: 144px;
 }
 
 .gallery{
