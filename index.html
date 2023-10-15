@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>Clon de Pinterest</title>
 </head>
 <body>
@@ -28,42 +29,53 @@
                     <a href="">
                         <p>Crear</p>
                         <div class="arrowItem">
-                            <i class="glyphicon glyphicon-downwards-chevron"></i>
+                            <ion-icon name="chevron-down"></ion-icon>
                         </div>
                     </a>
                 </div>
             </section>
+
             <section id="navBar">
                 <div class="barContainer">
-                    <div class="searchIcon"><img src="" alt=""></div>
+                    <div class="searchIcon">
+                        <ion-icon name="search"></ion-icon>
+                    </div>
                     <input type="text" aria-label="Buscar" placeholder="Buscar">
                 </div>
             </section>
             
             <section id="rightItems">
-                <div class="buttonCont icons">
+               <div class="buttonCont">
                     <a href="">
-                        <div id="iconBell">
-                            <i class="glyphicon glyphicon-bell"></i>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div id="iconMssge">
-                            <i class="glyphicon glyphicon-chat-message"></i>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div id="perfil">
-                            <i class="glyphicon glyphicon-user"></i>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="arrowItem">
-                            <i class="glyphicon glyphicon-downwards-chevron"></i>
+                        <div class="icon">
+                            <ion-icon name="notifications"></ion-icon>
                         </div>
                     </a>
                 </div>
+
+                <div class="buttonCont">
+                    <a href="">
+                        <div class="icon">
+                            <ion-icon name="chatbubble-ellipses"></ion-icon>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="buttonCont">
+                    <a href="">
+                        <div id="profil">
+                            <img src="https://i.pinimg.com/280x280_RS/42/03/a5/4203a57a78f6f1b1cc8ce5750f614656.jpg" alt="profil">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="buttonCont">
+                    <a href="">
+                        <div class="arrowItem">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </div>
+                    </a>
+                </div> 
             </section>
         </div>
     </nav>

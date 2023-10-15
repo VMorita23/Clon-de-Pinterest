@@ -1,19 +1,26 @@
 body{
-    margin: 1em;
+    min-height: 100%;
+    overflow-y: scroll;
+    position: relative;
+    margin: 0;
 }
 
 nav{
-    position: fixed;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
-    align-items: center;
+    position: sticky;
     height: 80px;
     width: 100%;
 }
 
 .navItems{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex: 1 1 auto;
+    min-height: 0;
+    min-width: 0;
+    padding: 4px 16px;
+    justify-content: center;
 }
 
 #leftItems{
@@ -22,25 +29,35 @@ nav{
     align-items: center;
 }
 
-.pinLogOpt{
-    width: 24px;
-    height: 24px;
+.barContainer{
+    display: flex;
+    flex-direction: row;
 }
 
-img{
-    max-width: 100%;
-    margin-bottom: 0.5em;
-    display: block;
-    border-radius: 40px;
+#rightItems{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navItems img{
+    width: 24px;
+    height: 24px;
 }
 
 main{
     display: block;
     box-sizing: border-box;
-    padding-top: 144px;
 }
 
 .gallery{
     columns: 5 320px;
     column-gap: 0.5em;
+}
+
+.gallery img{
+    max-width: 100%;
+    margin-bottom: 0.5em;
+    display: block;
+    border-radius: 40px;
 }
