@@ -9,76 +9,46 @@
     <title>Clon de Pinterest</title>
 </head>
 <body>
-    <nav>
-        <div class="navItems">
-            <section id="leftItems">
-                <div class="pinLogOpt">
-                    <img src="https://graffica.info/wp-content/uploads/2017/08/badgeRGB.png" alt="">
-                </div>
-                <div class="buttonCont">
-                    <a href="">
-                        Inicio
-                    </a>
-                </div>
-                <div class="buttonCont">
-                    <a href="">
-                        Explorar
-                    </a>
-                </div>
-                <div class="buttonCont r">
-                    <a href="">
-                        Crear
-                        <div class="arrowItem">
-                            <ion-icon name="chevron-down"></ion-icon>
-                        </div>
-                    </a>
-                </div>
-            </section>
-
-            <section id="navBar">
-                <div class="barContainer">
-                    <div class="searchIcon">
-                        <ion-icon name="search"></ion-icon>
+    <header>
+        <nav>
+            <div id="navItems">
+                <section id="leftItems">
+                    <div class="icon" id="pinLogo">
+                        <ion-icon name="logo-pinterest"></ion-icon>
                     </div>
-                    <input type="text" aria-label="Buscar" placeholder="Buscar">
-                </div>
-            </section>
+                    <div class="buttonCont" tabindex="0">
+                        <span>Inicio</span>
+                    </div>
+                    <div class="buttonCont" tabindex="0">
+                        <span>Explorar</span>
+                    </div>
+                    <div class="buttonCont" id="buttonWiArr" tabindex="0">
+                        <span>Crear<ion-icon name="chevron-down"></ion-icon></span>
+                    </div>
+                </section>
+
+                <section id="navBar">
+                    <div class="barContainer">
+                        <div class="searchIcon">
+                            <ion-icon name="search"></ion-icon>
+                        </div>
+                        <input type="text" aria-label="Buscar" placeholder="Buscar">
+                    </div>
+                </section>
+                
+                <section class="rightItems">
+                    <ul #iconButtons>
+                        <li class="icon"><ion-icon name="notifications"></ion-icon></li>
+                        <li class="icon"><ion-icon name="chatbubble-ellipses"></ion-icon></li>
+                        <li class="icon"><ion-icon name="person-circle"></ion-icon></li>
+                        <li class="icon" id="arrowOpt"><ion-icon name="chevron-down"></ion-icon></li>
+                    </ul>
+                </section>
+            </div>
             
-            <section id="rightItems">
-               <div class="buttonCont">
-                    <a href="">
-                        <div class="icon">
-                            <ion-icon name="notifications"></ion-icon>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="buttonCont">
-                    <a href="">
-                        <div class="icon">
-                            <ion-icon name="chatbubble-ellipses"></ion-icon>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="buttonCont">
-                    <a href="">
-                        <div id="profil">
-                            <img src="https://i.pinimg.com/280x280_RS/42/03/a5/4203a57a78f6f1b1cc8ce5750f614656.jpg" alt="profil">
-                        </div>
-                    </a>
-                </div>
-
-                <div class="buttonCont">
-                    <a href="">
-                        <div class="arrowItem">
-                            <ion-icon name="chevron-down"></ion-icon>
-                        </div>
-                    </a>
-                </div> 
-            </section>
-        </div>
-    </nav>
+            
+        </nav>
+    </header>
 
     <main>
         <div class="gallery">

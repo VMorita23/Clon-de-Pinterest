@@ -2,65 +2,88 @@ body{
     font-size: 16px;
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+header{
+    margin: 0;
+    position: fixed;
     box-sizing: border-box;
-    position: sticky;
-    height: 80px;
     width: 100%;
 }
 
-.navItems{
+nav{
+    position: relative;
+    height: 80px;
+    font-size: 18px;
+    padding: 4px 16px;
+}
+
+#navItems{
     display: flex;
     flex-direction: row;
-    padding: 4px 16px;
-    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #leftItems{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
-.pinLogOpt{
+.icon{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 48px;
-    width: 48px;
     border-radius: 100%;
+    width: 58px;
+    height: 58px;
+}
 
+.icon:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+#pinLogo{
+    font-size: 34px;
+    color: red;
 }
 
 .buttonCont{
-    display: block;
+    display: flex;
     box-sizing: border-box;
-    border-radius: 24px;
+    border-radius: 45px;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
-.buttonCont a{
+.buttonCont:focus{
+    background-color: black;
+    color: white;
+}
+
+.buttonCont span{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    height: 58px;
     padding-left: 16px;
     padding-right: 16px;
-    text-decoration: none;
-    color: inherit;
+}
+
+#buttonWiArr span ion-icon{
+    margin-left: 4px;
 }
 
 #navBar{
     display: flex;
+    align-items: center;
     box-sizing: border-box;
     height: 58px;
     padding-left: 8px;
@@ -75,25 +98,32 @@ nav{
     align-items: center;
     padding-left: 16px;
     width: 100vh;
-    height: 48px;
-    background-color: rgb(227, 227, 227);
+    height: 58px;
+    background-color: rgb(238, 238, 238);
     border-radius: 40px;
 }
 
+.barContainer:hover{
+    background-color: rgb(213, 213, 213);
+}
+
 .searchIcon{
+    display: flex;
     margin-right: 8px;
+    justify-content: center;
+    align-items: center;
 }
 
 .searchIcon ion-icon{
-    width: 16px;
-    height: 16px;
+    font-size: 20px;
+    color: rgb(109, 109, 109);
 }
 
 input{
     background-color: transparent;
     border: none;
     color: rgb(86, 86, 86);
-    font-size: 16px;
+    font-size: 18px;
     width: 100%;
     height: 100%;
     padding: 0;
@@ -105,20 +135,35 @@ input{
     align-items: center;
 }
 
-.buttonCont .icon ion-icon{
-    width: 30px;
-    height: 30px;
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
-.navItems img{
-    width: 30px;
-    height: 30px;
+ul .icon ion-icon{
+    font-size: 30px;
+    color: rgb(109, 109, 109);
+}
+
+#arrowOpt{
     border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+#arrowOpt ion-icon{
+    font-size: 20px;
 }
 
 main{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
+    padding-top: 100px;
 }
 
 .gallery{
