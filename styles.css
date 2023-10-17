@@ -10,29 +10,30 @@ header{
     position: fixed;
     box-sizing: border-box;
     width: 100%;
+    background-color: white;
 }
 
 nav{
     position: relative;
     height: 80px;
     font-size: 18px;
+    font-weight: 600;
     padding: 4px 16px;
+    display: flex;
+    justify-content: center;
 }
 
 #navItems{
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #leftItems{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
 .icon{
@@ -40,8 +41,8 @@ nav{
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    width: 58px;
-    height: 58px;
+    width: 60px;
+    height: 60px;
 }
 
 .icon:hover{
@@ -83,9 +84,9 @@ nav{
 
 #navBar{
     display: flex;
+    justify-content: center;
     align-items: center;
-    box-sizing: border-box;
-    height: 58px;
+    flex: 1;
     padding-left: 8px;
     padding-right: 8px;
 }
@@ -97,7 +98,7 @@ nav{
     justify-content: center;
     align-items: center;
     padding-left: 16px;
-    width: 100vh;
+    width: 100%;
     height: 58px;
     background-color: rgb(238, 238, 238);
     border-radius: 40px;
@@ -131,13 +132,11 @@ input{
 
 #rightItems{
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
 ul{
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -164,15 +163,66 @@ main{
 }
 
 .gallery{
-    position: relative;
-    columns: 5 320px;
+    columns: 6 250px;
     column-gap: 1em;
-    margin: 0 100px;
+    margin: 0 140px;
+}
+
+.imgContent{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 2em;
+    page-break-inside: avoid;
 }
 
 .gallery img{
     max-width: 100%;
-    margin-bottom: 3em;
     display: block;
-    border-radius: 40px;
+    border-radius: 30px;
+}
+
+.gallery img:hover{
+    color: black;
+}
+
+.imgDescription{
+    padding: 8px 8px 16px;
+    text-align: justify;
+}
+
+.imgDescription p{
+    line-height: 20px;
+    font-size: 18px;
+    margin: 0;
+}
+
+footer{
+    display: block;
+    position: fixed;
+    box-sizing: border-box;
+    width: 72px;
+    height: 72px;
+    z-index: 660;
+    right: 0px;
+    margin: 16px;
+    bottom: 0;
+}
+
+.help{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    position: absolute;
+}
+
+.help:hover{
+    background-color: rgb(241, 241, 241);
+}
+
+.help ion-icon{
+    font-size: 45px;
 }
