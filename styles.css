@@ -49,7 +49,7 @@ nav{
 }
 
 #pinLogo{
-    font-size: 34px;
+    font-size: 40px;
     color: red;
 }
 
@@ -144,7 +144,7 @@ ul{
 }
 
 ul .icon ion-icon{
-    font-size: 30px;
+    font-size: 40px;
     color: rgb(109, 109, 109);
 }
 
@@ -155,25 +155,24 @@ ul .icon ion-icon{
 }
 
 #arrowOpt ion-icon{
-    font-size: 20px;
+    font-size: 25px;
 }
 
 main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     box-sizing: border-box;
     padding-top: 100px;
 }
 
 .gallery{
+    position: relative;
     columns: 5 320px;
-    column-gap: 0.5em;
+    column-gap: 1em;
+    margin: 0 100px;
 }
 
 .gallery img{
     max-width: 100%;
-    margin-bottom: 0.5em;
+    margin-bottom: 3em;
     display: block;
     border-radius: 40px;
 }
