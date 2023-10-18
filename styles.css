@@ -279,6 +279,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     width: 65px;
     height: 65px;
@@ -292,4 +293,119 @@ footer{
 
 .help ion-icon{
     font-size: 45px;
+}
+
+@media screen and (min-width: 550px) and (max-width: 815px) {
+    
+    #navbar-pinterest{
+        font-size: 13px;
+        height: 60px;
+    }
+    
+    .icon{
+        width: 30px;
+        height: 30px;
+    }
+    
+    #pinterest-icon{
+        font-size: 25px;
+    }
+    
+    .buttonCont span{
+        height: 38px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    #buttonWiArr span ion-icon{
+        margin-left: 2px;
+    }
+    
+    #navBar{
+        min-width: 230px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    
+    .barContainer{
+        padding-left: 10px;
+        width: 100%;
+        height: 40px;
+        border-radius: 40px;
+    }
+
+    .searchIcon{
+        margin-right: 4px;
+    }
+    
+    .searchIcon ion-icon{
+        font-size: 15px;
+    }
+    
+    input{
+        font-size: 14px;
+    }
+
+    .iconButtons .icon ion-icon{
+        font-size: 20px;
+    }
+    
+    #arrowOpt{
+        width: 30px;
+        height: 30px;
+    }
+    
+    #arrowOpt ion-icon{
+        font-size: 15px;
+    }
+    
+    main{
+        padding-top: 80px;
+    }
+    
+    .gallery{
+        columns: 6 120px;
+        margin: 0 60px;
+    }
+    
+    .imgContainer{
+        margin-bottom: 1em;
+    }
+    
+    #addButtons{
+        display: none;
+    }
+    
+    .imgDescription{
+        padding: 3px 3px 8px;
+    }
+    
+    .imgDescription p{
+        line-height: 12px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 816px) and (max-width: 1060px){
+    main{
+        padding-top: 100px;
+    }
+    
+    .gallery{
+        columns: 6 160px;
+        margin: 0 60px;
+    }
+    
+    .imgContainer{
+        margin-bottom: 1.5em;
+    }
+    
+    .imgDescription{
+        padding: 5px 5px 12px;
+    }
+    
+    .imgDescription p{
+        line-height: 14px;
+        font-size: 15px;
+    }
 }
